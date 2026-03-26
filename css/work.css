@@ -8,15 +8,13 @@
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   background-color: #e6e2d7;
-  font-family: yu-gothic, "Yu Gothic Medium", "Yu Gothic", sans-serif;
+  font-family: "Yu Gothic", "Yu Gothic Medium", "Yu Gothic", sans-serif;
 }
-
-/* ===============================================
-   header
-   =============================================== */
+/* ┌─────────────────────────────────────────┐
+   │ ヘッダー                        │
+   └─────────────────────────────────────────┘ */
 
 /* ヘッダー外枠 */
 .header_area {
@@ -34,7 +32,7 @@ body {
   writing-mode: vertical-rl;
 }
 
-/* ヘッダー内側【flex 横3列: ロゴ + ナビ + ストア】 */
+/* ヘッダー内側【flex 縦3列: ロゴ + ナビ + ストア】 */
 .header_inner {
   margin-right: 8rem;
   margin-top: 6rem;
@@ -53,11 +51,14 @@ body {
 
 /* ロゴリンク */
 .header_logo_link {
-  text-decoration: none;
 }
 
 /* ロゴ画像 */
 .header_logo_img {
+  display: block;
+  text-decoration: none;
+  height: 9.1rem;
+  width: 4rem;
 }
 
 /* └ ナビ（中） */
@@ -78,6 +79,7 @@ body {
 /* ナビリンク */
 .header_nav_link {
   color: white;
+  font-size: 1.6rem;
 }
 
 /* └ ストア（左） */
@@ -95,15 +97,18 @@ body {
 
 /* ストアリンク */
 .header_store_link {
-  display: block;
   height: 24rem;
   width: 5.2rem;
+  font-size: 1.6rem;
 
   padding: 0.8rem 1.6rem;
   border: 0.1rem solid #cccccc;
   color: white;
   background: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===============================================
@@ -118,6 +123,7 @@ body {
   padding-right: var(--side-width); /* サイドスペースの幅 */
 
   writing-mode: vertical-rl;
+  font-family: "Yu Mincho", "游明朝", serif;
 }
 
 /* サブタイトル（news） */
@@ -129,10 +135,10 @@ body {
 /* タイトル（お知らせ） */
 .news_title {
   margin-top: 18rem;
-  font-size: 2rem;
+  font-size: 3.6rem;
 }
 
-/* ニュース一覧【flex 横6列: item × 6】 */
+/* ニュース一覧【flex 縦6列: item × 6】 */
 .news_list {
   margin-right: 12rem;
   margin-top: 27.7rem;
@@ -141,106 +147,110 @@ body {
   align-items: flex-start;
   flex-direction: column;
 
-  gap: 3.2rem;
+  gap: 0.1rem;
 }
 
-/* └ ニュース1件ブロック【flex 縦2行: 日付 + テキスト】 */
+/* └ ニュース1件ブロック */
 .news_item {
-  width: 7rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
+  width: 8rem;
   font-size: 1.6rem;
-
   border-right: 0.1rem solid #cccccc;
+}
+
+.news_item:last-child {
+  border-left: 0.1rem solid #cccccc;
 }
 
 /* └ └ 日付 */
 .news_date {
-  width: 2rem;
+  display: block;
+  padding-right: 1rem;
 }
 
 /* └ └ テキスト */
-.news_text {
+.news_text:last-child {
+  padding-left: 1rem;
 }
 
 /* ===============================================
    products
    =============================================== */
 
-/* 商品セクション外枠【flex 横2列: タイトル側 + 画像側】 */
-.products_area {
+/* 商品セクション外枠【flex 横2列: タイトル側 + 画像側（area1はrow-reverse）】 */
+#products1,
+#products2 {
+  width: 100%;
+  padding: 0 var(--side-width);
+  margin: 0 auto;
   display: flex;
-  margin-bottom: 18rem;
+
+  border: 0.5rem solid red;
+  margin-bottom: 20rem;
+}
+
+.products_area1 {
+  flex-direction: row-reverse;
 }
 
 /* └ タイトル側 */
 .products_header {
-  font-weight: normal;
-  line-height: 1;
+  display: flex;
+  flex-direction: row;
+  writing-mode: vertical-rl;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  font-size: 3rem;
 }
 
 /* └ └ 日本語タイトル */
 .products_title {
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.8rem;
+  font-size: 3.6rem;
 }
 
 /* └ └ 英語タイトル */
 .products_subtitle {
-  font-size: 0.875rem;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
 }
 
 /* └ 画像側 */
 .products_img_wrapper {
-  width: 65%;
-  margin-top: 10rem;
+  margin-top: 15rem;
+  width: 60%;
   position: relative;
 }
 
 /* └ └ 写真 */
 .products_img {
   width: 100%;
+  border: 0.5rem solid green;
 }
 
 /* └ └ テキストボックス */
 .products_text {
-  width: 56%;
-  color: #fff;
-  padding: 5rem 0;
-  text-align: center;
+  height: 15rem;
+  width: 25rem;
+  font-size: 1.6rem;
+
   position: absolute;
-  bottom: -2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 1枚目: 画像左・タイトル右 */
-#products1 {
-  flex-direction: row-reverse;
-}
-
-#products1 .products_header {
-  margin-left: 2rem;
-  writing-mode: vertical-lr;
-}
-
-#products1 .products_text {
-  background: rgba(249, 233, 6, 0.6);
+.products_position1 {
+  bottom: -5rem;
   left: -2rem;
+  background-color: #f9e90699;
 }
 
-/* 2枚目: タイトル左・画像右 */
-#products2 .products_header {
-  margin-right: 2rem;
-  writing-mode: vertical-rl;
-}
-
-#products2 .products_text {
-  background: rgba(149, 42, 38, 0.6);
+.products_position2 {
+  bottom: -5rem;
   right: -2rem;
+  background-color: #952a2699;
 }
 
 /* ===============================================
@@ -250,4 +260,105 @@ body {
 .aaa {
   width: 100%;
   height: 60rem;
+  margin-bottom: 20rem;
+}
+
+/* ===============================================
+   footer
+   =============================================== */
+
+/* フッター外枠【flex 縦: ロゴ + 住所情報 + ナビ + ストアリンク + コピーライト】 */
+.footer_area {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #000000;
+  color: white;
+}
+
+.footer_inner {
+  writing-mode: vertical-rl;
+  margin-top: 8rem;
+}
+
+/* └ ロゴ */
+.footer_logo {
+  margin-right: 8rem;
+  height: 9rem;
+  width: 4rem;
+}
+
+/* └ 住所・電話 */
+.footer_info {
+  margin-right: 6rem;
+}
+
+/* 電話番号 */
+.footer_tel {
+}
+
+/* 住所 */
+.footer_address {
+}
+
+/* └ ナビリンク【flex 縦: お知らせ + お問い合わせフォーム + プライバシーポリシー】 */
+.footer_contact {
+  margin-right: 6rem;
+}
+
+/* └ └ ナビリスト */
+.footer_contact_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* ナビ項目 */
+.footer_contact_item {
+}
+
+.footer_contact_link {
+  color: white;
+}
+
+/* └ ストアリンク【flex 縦: オンラインストア + お問い合わせ】 */
+.footer_store {
+  writing-mode: vertical-rl;
+  display: flex;
+}
+
+/* オンラインストアリンク */
+.footer_online {
+  color: white;
+}
+
+.footer_online::after {
+  content: "|";
+  color: white;
+}
+
+/* お問い合わせリンク */
+.footer_inquiry {
+  color: white;
+}
+
+/* コピーライト */
+.footer_copyright {
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ セクション名                        │
+   └─────────────────────────────────────────┘ */
+
+.footer_copyright {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+
+  text-align: center;
+
+  color: white;
 }

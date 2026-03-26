@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="css/work.css" />
   </head>
   <body>
-    <!-- relative 「オンラインストアを左下に配置 -->
     <header class="header_area">
-      <!-- 画面の位置を右から開始させる -->
       <div class="header_inner">
         <!-- ロゴ -->
         <h1 class="header_logo">
@@ -26,56 +24,56 @@
           </ul>
         </nav>
       </div>
-      <!-- オンラインストアを見る absolute 右下に配置 -->
-      <div class="header_store">
+      <!-- オンラインストアへのリンク -->
+      <button class="header_store">
         <a href="#" class="header_store_link">オンラインストアを見る</a>
-      </div>
+      </button>
     </header>
     <main>
-      <!-- お知らせ 右から-->
+      <!-- お知らせセクション -->
       <section class="news_area">
-        <h2 class="news_subtitle">news</h2>
+        <p class="news_subtitle">news</p>
         <p class="news_title">お知らせ</p>
 
-        <!-- display: flex; で横並びにする'(縦書き) -->
+        <!-- お知らせリスト -->
         <div class="news_list">
           <div class="news_item">
             <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
           </div>
           <div class="news_item">
             <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
-          </div>
-
-          <div class="news_item">
-            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
           </div>
 
           <div class="news_item">
             <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
           </div>
 
           <div class="news_item">
             <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
           </div>
 
           <div class="news_item">
             <time class="news_date" datetime="2024-06-01">2024.06.01</time>
-            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
+          </div>
+
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">タ イ ト ル タ イ ト ル タ イ ト ル タ イ ト ル</p>
           </div>
         </div>
       </section>
 
       <!-- 商品セクション1【flex 横2列: タイトル側 + 画像側 / row-reverseで画像左・タイトル右】 -->
-      <section id="products1" class="products_area">
+      <section id="products1" class="products_area1">
         <!-- └ タイトル側（右） -->
         <div class="products_header">
           <!-- └ └ 日本語タイトル -->
-          <p class="products_title right_position">新しい価値の創造</p>
+          <p class="products_title">新しい価値の創造</p>
           <!-- └ └ 英語タイトル -->
           <p class="products_subtitle">Create New Values</p>
         </div>
@@ -84,34 +82,58 @@
           <!-- └ └ 写真 -->
           <img src="img/products1.jpg" alt="お菓子１" class="products_img" />
           <!-- └ └ テキストボックス -->
-          <div class="products_text">テキストテキスト<br />テキストテキスト</div>
+          <div class="products_text products_position1">テキストテキスト<br />テキストテキスト</div>
         </div>
       </section>
 
-      <!-- 商品セクション2【flex 横2列: タイトル側 + 画像側】 -->
-      <section id="products2" class="products_area">
+      <!-- 商品セクション2【flex 横2列: タイトル側 + 画像側 / row-reverseで画像左・タイトル右】 -->
+      <section id="products2">
         <!-- └ タイトル側（左） -->
         <div class="products_header">
           <!-- └ └ 日本語タイトル -->
           <p class="products_title">科学と技術の調和</p>
           <!-- └ └ 英語タイトル -->
-          <p class="products_subtitle">Science & Technology</p>
+          <p class="products_subtitle"> Science & Technology</p>
         </div>
         <!-- └ 画像側（右） -->
         <div class="products_img_wrapper">
           <!-- └ └ 写真 -->
           <img src="img/products2.jpg" alt="お菓子２" class="products_img" />
           <!-- └ └ テキストボックス -->
-          <div class="products_text">テキストテキスト<br />テキストテキスト</div>
+          <div class="products_text products_position2">テキストテキスト<br />テキストテキスト</div>
         </div>
       </section>
 
-      <!-- グーグルマップを埋め込む -->
+      <!-- 地図 -->
       <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.5903187146155!2d140.89138065!3d38.24261285000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a27e0bf42cc71%3A0xd9b1f886aaa01709!2z44CSOTg0LTA4MDIg5a6u5Z-O55yM5LuZ5Y-w5biC6Iul5p6X5Yy65YWr6LuS5bCP6Lev!5e0!3m2!1sja!2sjp!4v1774502221230!5m2!1sja!2sjp" class="aaa"></iframe>
+        <iframe src="" frameborder="0"> </iframe>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer_area">
+      <!-- オンラインストア・お問い合わせ -->
+      <div class="footer_store">
+        <a href="#" class="footer_online">オンラインストアを見る</a>
+        <a href="#" class="footer_inquiry">お問い合わせ</a>
+      </div>
+      <div class="footer_inner">
+        <img src="img/logo.svg" alt="創作ロゴ" class="footer_logo" />
+        <!-- 住所・電話 -->
+        <address class="footer_info">
+          <p class="footer_tel">電話：０３-ＸＸＸＸ-ＸＸＸＸ</p>
+          <p class="footer_address">〒１０６-００３２　東京都港区六本木５丁目×××××</p>
+        </address>
+        <!-- ナビリンク -->
+        <div class="footer_contact">
+          <ul class="footer_contact_list">
+            <li class="footer_contact_item"><a href="#" class="footer_contact_link">お知らせ</a></li>
+            <li class="footer_contact_item"><a href="#" class="footer_contact_link">お問い合わせフォーム</a></li>
+            <li class="footer_contact_item"><a href="#" class="footer_contact_link">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <small class="footer_copyright">© SOUSAKU</small>
     <script src="js/work.js"></script>
   </body>
 </html>
