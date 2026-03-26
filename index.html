@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XXXXXX</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/work.css" />
+  </head>
+  <body>
+    <!-- relative 「オンラインストアを左下に配置 -->
+    <header class="header_area">
+      <!-- 画面の位置を右から開始させる -->
+      <div class="header_inner">
+        <!-- ロゴ -->
+        <h1 class="header_logo">
+          <a href="#" class="header_logo_link"><img src="img/logo.svg" alt="創作ロゴ" class="header_logo_img" /></a>
+        </h1>
+        <!-- グローバルメニュー -->
+        <nav class="header_nav">
+          <ul class="header_nav_list">
+            <li class="header_nav_item"><a href="index.html" class="header_nav_link">お知らせ</a></li>
+            <li class="header_nav_item"><a href="about.html" class="header_nav_link">商品のご紹介</a></li>
+            <li class="header_nav_item"><a href="work.html" class="header_nav_link">店舗のご案内</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- オンラインストアを見る absolute 右下に配置 -->
+      <div class="header_store">
+        <a href="#" class="header_store_link">オンラインストアを見る</a>
+      </div>
+    </header>
+    <main>
+      <!-- お知らせ 右から-->
+      <section class="news_area">
+        <h2 class="news_subtitle">news</h2>
+        <p class="news_title">お知らせ</p>
+
+        <!-- display: flex; で横並びにする'(縦書き) -->
+        <div class="news_list">
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+
+          <div class="news_item">
+            <time class="news_date" datetime="2024-06-01">2024.06.01</time>
+            <p class="news_text">新商品「XXXXXX」の販売を開始しました。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 商品セクション1【flex 横2列: タイトル側 + 画像側 / row-reverseで画像左・タイトル右】 -->
+      <section id="products1" class="products_area">
+        <!-- └ タイトル側（右） -->
+        <div class="products_header">
+          <!-- └ └ 日本語タイトル -->
+          <p class="products_title right_position">新しい価値の創造</p>
+          <!-- └ └ 英語タイトル -->
+          <p class="products_subtitle">Create New Values</p>
+        </div>
+        <!-- └ 画像側（左） -->
+        <div class="products_img_wrapper">
+          <!-- └ └ 写真 -->
+          <img src="img/products1.jpg" alt="お菓子１" class="products_img" />
+          <!-- └ └ テキストボックス -->
+          <div class="products_text">テキストテキスト<br />テキストテキスト</div>
+        </div>
+      </section>
+
+      <!-- 商品セクション2【flex 横2列: タイトル側 + 画像側】 -->
+      <section id="products2" class="products_area">
+        <!-- └ タイトル側（左） -->
+        <div class="products_header">
+          <!-- └ └ 日本語タイトル -->
+          <p class="products_title">科学と技術の調和</p>
+          <!-- └ └ 英語タイトル -->
+          <p class="products_subtitle">Science & Technology</p>
+        </div>
+        <!-- └ 画像側（右） -->
+        <div class="products_img_wrapper">
+          <!-- └ └ 写真 -->
+          <img src="img/products2.jpg" alt="お菓子２" class="products_img" />
+          <!-- └ └ テキストボックス -->
+          <div class="products_text">テキストテキスト<br />テキストテキスト</div>
+        </div>
+      </section>
+
+      <!-- グーグルマップを埋め込む -->
+      <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.5903187146155!2d140.89138065!3d38.24261285000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a27e0bf42cc71%3A0xd9b1f886aaa01709!2z44CSOTg0LTA4MDIg5a6u5Z-O55yM5LuZ5Y-w5biC6Iul5p6X5Yy65YWr6LuS5bCP6Lev!5e0!3m2!1sja!2sjp!4v1774502221230!5m2!1sja!2sjp" class="aaa"></iframe>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/work.js"></script>
+  </body>
+</html>
