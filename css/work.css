@@ -45,14 +45,6 @@ body {
   gap: 6rem;
 }
 
-/* └ ロゴ（右） */
-.header_logo {
-}
-
-/* ロゴリンク */
-.header_logo_link {
-}
-
 /* ロゴ画像 */
 .header_logo_img {
   display: block;
@@ -61,19 +53,11 @@ body {
   width: 4rem;
 }
 
-/* └ ナビ（中） */
-.header_nav {
-}
-
 /* ナビリスト【flex 横3列: Home + About + Work】 */
 .header_nav_list {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-}
-
-/* └ ナビ項目 */
-.header_nav_item {
 }
 
 /* ナビリンク */
@@ -296,14 +280,6 @@ body {
   margin-right: 6rem;
 }
 
-/* 電話番号 */
-.footer_tel {
-}
-
-/* 住所 */
-.footer_address {
-}
-
 /* └ ナビリンク【flex 縦: お知らせ + お問い合わせフォーム + プライバシーポリシー】 */
 .footer_contact {
   margin-right: 6rem;
@@ -314,10 +290,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-}
-
-/* ナビ項目 */
-.footer_contact_item {
 }
 
 .footer_contact_link {
