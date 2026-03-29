@@ -15,7 +15,14 @@
       "mcp__chrome-devtools__navigate_page",
       "mcp__chrome-devtools__take_screenshot",
       "mcp__chrome-devtools__evaluate_script",
-      "Bash(start \"\" \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --remote-debugging-port=9222 \"http://127.0.0.1:5500/\")"
+      "Bash(start \"\" \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --remote-debugging-port=9222 \"http://127.0.0.1:5500/\")",
+      "Bash(taskkill /F /IM chrome.exe)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist)",
+      "Edit(~/.claude/skills/auto-kanpu/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\sensh\\.cache\\chrome-devtools-mcp\\chrome-profile"
     ]
   }
 }

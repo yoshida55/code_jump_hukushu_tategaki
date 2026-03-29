@@ -117,7 +117,7 @@ body {
 
 /* タイトル（お知らせ） */
 .news_title {
-  margin-top: 18rem;
+  margin-top: 18.4rem;
   font-size: 3.6rem;
 }
 
@@ -166,8 +166,12 @@ body {
   padding: 0 var(--side-width);
   margin: 0 auto;
   display: flex;
-
+  margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+
+#products2 {
+  margin-top: 11.9rem;
 }
 
 .products_area1 {
@@ -200,7 +204,7 @@ body {
 
 /* └ 画像側 */
 .products_img_wrapper {
-  margin-top: 6rem;
+  margin-top: 11.8rem;
   width: 60%;
   position: relative;
 }
